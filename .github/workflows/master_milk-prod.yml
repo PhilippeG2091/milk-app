@@ -50,6 +50,5 @@ jobs:
         uses: azure/webapps-deploy@v2
         with:
           app-name: 'milk-prod'
-          slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_EF8C2324525B41EFBFA067C142535879 }}
-          package: .
+          publish-profile: $
+          package: ./dist/hello-world-app
